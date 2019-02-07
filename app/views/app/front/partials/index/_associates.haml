@@ -1,0 +1,11 @@
+%h2.title-section NUESTRAS MARCAS ALIADAS
+.box-logos.padding-right-left
+	.content-logo
+		- @clients.each do |client|
+			%img{:alt => "", :src => "#{client.image}"}
+			.mask-logo
+				.red-social
+					%i.fa.fa-instagram{"aria-hidden" => "true"}
+					%i.fa.fa-facebook{"aria-hidden" => "true"}
+				%a{:href => "https://slicegroup.co"} visitanos
+		

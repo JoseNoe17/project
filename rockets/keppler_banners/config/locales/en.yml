@@ -1,0 +1,22 @@
+en:
+  keppler:
+    sidebar-menu:
+      keppler-banners: Keppler banners
+      keppler-banners-submenu:
+        banner: Banner
+    permissions:
+    models:
+      singularize:
+        banner: banner
+      pluralize:
+        banners: banners
+    modules:
+      admin/banner: Banner
+    messages:
+    actions:
+  activerecord:
+    attributes:
+    errors:
+      messages:
+  errors:
+  helpers:

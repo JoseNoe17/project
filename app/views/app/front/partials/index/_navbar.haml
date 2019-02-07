@@ -1,0 +1,20 @@
+%nav.navbar.navbar-expand-md.padding-right-left.navbar-light
+	%a.navbar-brand{:href => "#"}
+		/ <img id="logo-white" src="/assets/app/logo-white.png" alt="" style="width:100px ">
+		%img#logo-green{:alt => "", :src => "/assets/app/logo.png", :style => "width:100px "}/
+	%button#button-white.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+		%span#icon-white.navbar-toggler-icon
+	%button#button-green.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+		%span#icon-green.navbar-toggler-icon
+	#navbarNav.collapse.navbar-collapse
+		%ul.navbar-nav
+			%li.nav-item.active
+				%a.nav-link.navbar-link{:href => "#"}
+					INICIO
+					%span.sr-only (current)
+			%li.nav-item
+				%a.nav-link.navbar-link{:href => "/#about"} QUIÉNES SOMOS
+			%li.nav-item
+				%a.nav-link.navbar-link{:href => "/#"} NUESTRAS MARCAS
+			%li.nav-item
+				%a.nav-link.navbar-link{:href => "/#"} CONTÁCTANOS

@@ -1,0 +1,22 @@
+menu:
+  keppler_customers:
+    name: Keppler Customers
+    current: ['/']
+    url_path: /
+    icon: rocket
+    model: User
+    environment: all
+    submenu:
+      - client:
+          name: client
+          url_path: /admin/customers/clients
+          icon: layers
+          current: ['/admin/customers/clients']
+          model: KepplerCustomers::Client
+
+      # - new:
+      #     name: + Add new module
+      #     url_path: /url_path
+      #     current: ['/current_path']
+      #     enviroment: development
+      #     model: User

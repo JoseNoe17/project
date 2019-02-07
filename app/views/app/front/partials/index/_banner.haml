@@ -1,0 +1,8 @@
+.slick-banner
+  - @banners.each do |banner|
+    .item-slick{:style => " background-image: url('#{banner.image}') "}
+      .mask-banner
+        %h1.title-banner Negocios
+        %button.btn-green.one
+          .insider
+          INVERTIR AHORA

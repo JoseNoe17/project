@@ -1,0 +1,57 @@
+.padding-right-left.padding-top-bottom
+	.row
+		.col-lg-8.col-md-6.order-sm-2.order-lg-2
+			#v-pills-tabContent.tab-content
+				#v-pills-home.tab-pane.show.active{"aria-labelledby" => "v-pills-home-tab", :role => "tabpanel"}
+					.flex-about
+						.box-left
+							.box-logo-about
+								%img{:alt => "", :src => "/assets/app/logo.png"}
+							.text-about
+								%p
+									Somos el equipo de Colaboradores de Arlides Group, fomentamos y desarrollamos empresas valiosas,
+									empoderando a las personas de sus sueños por medio del estilo de vida basado en los negocios,
+									convirtiendo los retos en oportunidades generando valor y haciendo del mundo un mejor lugar.
+							%button.btn-green.one
+								.insider
+								LEER MÁS
+						.img-about{:style => " background-image: url('https://images.unsplash.com/photo-1519120126473-8be7aedcd6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') "}
+							.line-about
+				#v-pills-profile.tab-pane{"aria-labelledby" => "v-pills-profile-tab", :role => "tabpanel"}
+					.flex-about
+						.box-left
+							.box-logo-about
+								%img{:alt => "", :src => "/assets/app/logo.png"}
+							.text-about
+								%p
+									Vinimos a
+									empoderar a las personas de sus sueños por medio del estilo de vida basado en los negocios,
+									convirtiendo
+									los retos en oportunidades generando valor y haciendo del mundo un mejor lugar. Caracterizados
+									por ser: autentico, inspirador, ecléctico...
+							%button.btn-green.one
+								.insider
+								LEER MÁS
+						.img-about{:style => " background-image: url('https://images.unsplash.com/photo-1519120126473-8be7aedcd6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') "}
+							.line-about
+				#v-pills-messages.tab-pane{"aria-labelledby" => "v-pills-messages-tab", :role => "tabpanel"}
+					.flex-about
+						.box-left
+							.box-logo-about
+								%img{:alt => "", :src => "/assets/app/logo.png"}
+							.text-about
+								%p
+									Buscamos maximizar el valor del capital a largo plazo a través de la inversión en estos sectores.
+									Estamos atentos constantemente a nuevas oportunidades de inversión y sobre todo a asociarnos con
+									inversores de ideas afines.
+							%button.btn-green.one
+								.insider
+								LEER MÁS
+						.img-about{:style => " background-image: url('https://images.unsplash.com/photo-1521020773588-3b28297b1e70?ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80') "}
+							.line-about
+		.col-lg-4.col-md-6.order-sm-1.order-lg-2
+			.box-right
+				#v-pills-tab.nav.nav-tab.flex-column.nav-pills{"aria-orientation" => "vertical", :role => "tablist"}
+					%a#v-pills-home-tab.nav-link.active.item-tab{"aria-controls" => "v-pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#v-pills-home", :role => "tab"} CONÓCENOS
+					%a#v-pills-profile-tab.nav-link.item-tab{"aria-controls" => "v-pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-profile", :role => "tab"} A QUE VINIMOS
+					%a#v-pills-messages-tab.nav-link.item-tab{"aria-controls" => "v-pills-messages", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-messages", :role => "tab"} QUE BUSCAMOS

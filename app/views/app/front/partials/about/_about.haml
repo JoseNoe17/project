@@ -1,0 +1,70 @@
+%h2.title-section CONÓCENOS
+	.row
+		.col-lg-6
+			%nav.nav-about-view
+				#nav-tab.nav.nav-tabs{:role => "tablist"}
+					%a#nav-home-tab.nav-item.nav-link.active.tab-about{"aria-controls" => "nav-home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav-home", :role => "tab"} PLAN DE NEGOCIOS
+					%a#nav-profile-tab.nav-item.nav-link.tab-about{"aria-controls" => "nav-profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav-profile", :role => "tab"} CRITERIOS DE INVERSIÓN
+					%a#nav-contact-tab.nav-item.nav-link.tab-about{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav-contact", :role => "tab"} EN QUE CREEMOS
+			#nav-tabContent.tab-content
+				#nav-home.tab-pane.fade.show.active.description-about{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"}
+					%p
+						El Equipo de inversión revisa todas las presentaciones, recibimos diferentes propuestas y todas las
+						respondemos, aunque solo Ejecutamos aquellas que creemos que tienen el mayor potencial de inversión y que
+						se ajustan a nuestros criterios de inversión. Su plan de negocios debe abordar los siguientes aspectos de
+						la manera más concisa posible:
+					%ul.list-about
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Propósito comercial y estrategia.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Cliente objetivo y mercado (Segmento).
+							Verificables.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Propuesta de valor de producto o servicio y
+							unidad económica.
+				#nav-profile.tab-pane.fade.description-about{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"}
+					%p
+						Si usted es un inversionista o hace parte de un equipo de administración experimentado que busca
+						opciones para el crecimiento de capital, este podría ser el comienzo de una Excelente Relación.
+						%br/
+						El equipo de Arlides Group está en constante búsqueda de Oportunidades de Inversión y Desarrollo de
+						Proyectos que cumplan con los estos criterios:
+					%ul.list-about
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Proporcionar una propuesta de valor diferenciada.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Proyección de Ingresos y relaciones comerciales
+							Verificables.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Valorar, Respetar y Promover la Cultura
+							empresarial y ADN de Arlides Group
+				#nav-contact.tab-pane.fade.description-about{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"}
+					%ul.list-about
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Invertir en los sueños de la gente.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Nunca se pone más fácil, sólo te haces más
+							fuerte.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							No vemos las cosas cómo son, vemos las cosas cómo
+							somos
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							La rentabilidad como consecuencia.
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							Retribuir para hacer del mundo un mejor lugar
+						%li
+							%i.fa.fa-check-square{"aria-hidden" => "true"}
+							No será fácil, pero será Muy emocionante
+		.col-lg-6
+			.bg-about{:style => "background-image: url('https://images.unsplash.com/photo-1501228349589-c88664efb8b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');"}

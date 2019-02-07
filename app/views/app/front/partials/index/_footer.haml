@@ -1,0 +1,41 @@
+%footer
+  .padding-right-left.padding-top-bottom.mask-footer
+    .row
+      .col-lg-6
+        .box-logo
+          %img{:alt => "", :src => "/assets/app/logo-white.png"}
+          %p
+            Fomentamos y desarrollamos empresas valiosas, convirtiendo
+            los retos en oportunidades generando valor y haciendo del mundo un mejor lugar.
+        .box-info-contact
+          .contact
+            %p
+              %i.fa.fa-map-marker{"aria-hidden" => "true"}
+              Barrio Colombia, Cristo Rey, Laureles Primer
+              Piso
+          .follow
+            %div
+              %a{:href => "https://www.facebook.com/arlidesgroup/", :target => "_blank"}
+                %i.fa.fa-facebook{"aria-hidden" => "true"}
+              %a{:href => "https://www.instagram.com/arlidesgroup/?hl=es-la", :target => "_blank"}
+                %i.fa.fa-instagram{"aria-hidden" => "true"}
+              %a.company{:href => ""} Política de Privacidad
+              %a.company{:href => ""} Términos y Condiciones
+      .col-lg-6
+        %form.form-footer{:action => ""}
+          %h2 CONTÁCTANOS
+          = render 'app/layouts/messages'
+          = simple_form_for [:contact_us, @message], url: app_new_message_es_path do |f|
+          %input{:placeholder => "NOMBRE Y APELLIDO", :type => "text", name: 'message[name]'}/
+          %input{:placeholder => "CORREO ELECTRÓNICO", :type => "email", name: 'message[to_emails]'}/
+          %textarea{:cols => "30", :id => "", name: 'message[content]', :placeholder => "MENSAJE", :rows => "10"}
+          .box-submit
+            %center
+              .g-recaptcha{"data-sitekey" => "your key"}
+            %button.btn-green.one
+              .insider
+              ENVIAR
+  .copyright
+    Copyright © Arlides Group 2019 | Powered by
+    %a{:href => "https://slicegroup.co/"}
+      %img{:alt => "", :src => "/assets/app/logo-slice.jpg", :width => "10rem"}
